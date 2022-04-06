@@ -1,6 +1,6 @@
 import Create<%= options.model %>Command from '../../Commands/<%= options.models %>/Create<%= options.model %>Command';
 import <%= options.model %>Services from '../../Services/<%= options.models %>/<%= options.model %>Services';
-import <%= options.model %> from '../../Domain/Entities/<%= options.model %>';
+import <%= options.model %> from '../../Domain/Models/<%= options.model %>';
 import { Store<%= options.model %>Schema } from '../../../Controllers/Schemas/<%= options.model %>Schema'
 import RequiredFieldException from '../../Exceptions/RequiredFieldException';
 import Validator from '../../../Common/Validator';
