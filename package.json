@@ -70,6 +70,6 @@
   "scripts": {
     "test": "jest"
   },
-  "repository": "https://github.com/emirhg/generator-expressjs-rest.git",
+  "repository": "https://github.com/mewehren/generator-expressjs-rest.git",
   "license": "GPL-3.0"
 }
