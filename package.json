@@ -1,0 +1,75 @@
+{
+  "name": "generator-expressjs-rest",
+  "version": "0.0.3",
+  "description": "",
+  "homepage": "",
+  "author": {
+    "name": "Martin Wehren",
+    "email": "contacto@prixel.ar",
+    "url": ""
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "expressjs",
+    "typeorm",
+    "yeoman-generator"
+  ],
+  "devDependencies": {
+    "coveralls": "^3.0.5",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-xo": "^0.25.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^23.5.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2",
+    "yeoman-assert": "^3.1.0",
+    "yeoman-test": "^1.7.0",
+    "yo": "^2.0.6"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^2.0.1",
+    "chalk": "^2.1.0",
+    "yosay": "^2.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "xo",
+      "prettier"
+    ],
+    "env": {
+      "jest": true,
+      "node": true
+    },
+    "rules": {
+      "prettier/prettier": "error"
+    },
+    "plugins": [
+      "prettier"
+    ]
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": "https://github.com/emirhg/generator-expressjs-rest.git",
+  "license": "GPL-3.0"
+}
