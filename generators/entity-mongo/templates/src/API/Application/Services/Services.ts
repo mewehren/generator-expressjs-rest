@@ -1,6 +1,5 @@
 import NotFoundEntityException from '../../Exceptions/NotFoundEntityException';
 import <%= options.model %>Model from '../../Domain/Models/<%= options.model %>';
-import mongoose from 'mongoose';
 
 /**
  * @package <%= options.model %>Services
