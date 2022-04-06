@@ -43,8 +43,8 @@ module.exports = class extends Generator {
 
     // Entity base file
     this.fs.copyTpl(
-      this.templatePath('src/API/Application/Domain/Entities/Entity.ts'),
-      this.destinationPath(`src/API/Application/Domain/Entities/${this.options.model}.ts`),
+      this.templatePath('src/API/Application/Domain/Models/Entity.ts'),
+      this.destinationPath(`src/API/Application/Domain/Models/${this.options.model}.ts`),
       {props : this.props, options : this.options}
     );
 
